@@ -40,7 +40,7 @@ for i in range(1,broj_prodaja+1):
     prodaja['datum'] = date(godina, mjesec, dan)
     prodaja['artikli'] = artikl
 
-    print('Odaberite korisnika {i}. prodaje')
+    print(f'Odaberite korisnika {i}. prodaje')
     for j,korisnik in enumerate(korisnici, start =1):
         print(f"\t{j}.{korisnik['Ime']}{korisnik['Prezime']}")
         odabrani_korisnik = int(input('Odabrani korisnik:'))
